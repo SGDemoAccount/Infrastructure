@@ -16,7 +16,19 @@ package  'java' do
 	action :install
 end
 
+package  'maven' do
+	action :install
+end
+
+package  'git' do
+        action :install
+end
+
 manageJenkins 'install' do
 		action    :install
 end
+manageJenkins 'install' do
+                action    :enable
+end
+
 
